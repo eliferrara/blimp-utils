@@ -11,7 +11,13 @@
 
 ## Installation
 
-To install the library, run the following commands in a terminal:
+To install the library, run the one-line install command in a terminal:
+
+```bash
+sudo curl -sSL https://raw.githubusercontent.com/Ballistyxx/blimp-utils/refs/heads/main/install.sh | sh
+```
+
+Or, install manually:
 
 ```bash
 sudo apt update

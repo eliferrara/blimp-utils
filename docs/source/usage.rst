@@ -19,16 +19,21 @@ Then, activate the virtual environment:
 
    (.venv) $ source .venv/bin/activate
 
-You can then install the library on your Raspberry Pi using pip:
-
-.. code-block:: console
-
-   (.venv) $ git clone https://github.com/Ballistyxx/blimp-utils.git
-   cd blimp-utils
-   sudo pip3 install .
-
-Or, use the included one-liner:
+Next, to install the library, run the one-line install command in a terminal:
 
 .. code-block:: console
 
    (.venv) $ sudo curl -sSL https://raw.githubusercontent.com/Ballistyxx/blimp-utils/refs/heads/main/install.sh | sh
+
+Or, install the library manually on your Raspberry Pi using pip:
+
+.. code-block:: console
+
+   sudo apt update
+   sudo apt install python3-pip python3-setuptools
+   git clone https://github.com/Ballistyxx/blimp-utils.git
+   cd blimp-utils
+   sudo pip3 install .
+   cd .. && rm -rf blimp-utils
+
+Or, use the included one-liner:

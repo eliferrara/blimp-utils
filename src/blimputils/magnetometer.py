@@ -595,8 +595,9 @@ class Magnetometer(object):
 
     :return: Status of the initialization.
     :rtype: int
-    :retval: BMM350_OK: Initialization successful.
-    :retval: BMM350_CHIP_ID_ERROR: Chip ID mismatch, initialization failed.
+    :options: 
+      * ``BMM350_OK``: Initialization successful.
+      * ``BMM350_CHIP_ID_ERROR``: Chip ID mismatch, initialization failed.
     """
   
     rslt = BMM350_OK
@@ -694,11 +695,12 @@ class Magnetometer(object):
 
     :return: A string describing the current operation mode.
     :rtype: str
-    :retval: "bmm350 is suspend mode!": Sensor is in suspend mode.
-    :retval: "bmm350 is normal mode!": Sensor is in normal mode.
-    :retval: "bmm350 is forced mode!": Sensor is in forced mode.
-    :retval: "bmm350 is forced_fast mode!": Sensor is in forced-fast mode.
-    :retval: "error mode!": Unknown or error in power mode status.
+    :options: 
+        * "bmm350 is suspend mode!": Sensor is in suspend mode.
+        * "bmm350 is normal mode!": Sensor is in normal mode.
+        * "bmm350 is forced mode!": Sensor is in forced mode.
+        * "bmm350 is forced_fast mode!": Sensor is in forced-fast mode.
+        * "error mode!": Unknown or error in power mode status.
     """
     result = ""
     if bmm350_sensor.power_mode == BMM350_SUSPEND_MODE:
@@ -817,9 +819,10 @@ class Magnetometer(object):
 
     :return: A string indicating the self-test result based on enabled axes.
     :rtype: str
-    :retval: "x y z aix test success": If X, Y, and Z axes are enabled.
-    :retval: "<axes> aix test success": If a subset of axes are enabled (e.g., "x y ").
-    :retval: "xyz aix self test fail": If no axes are enabled.
+    :options: 
+        * "x y z aix test success": If X, Y, and Z axes are enabled.
+        * "<axes> aix test success": If a subset of axes are enabled (e.g., "x y ").
+        * "xyz aix self test fail": If no axes are enabled.
     """
     axis_en = self.read_reg(BMM350_REG_PMU_CMD_AXIS_EN, 1)
     en_x = self.BMM350_GET_BITS(axis_en[0], BMM350_EN_X_MSK, BMM350_EN_X_POS)
@@ -878,8 +881,9 @@ class Magnetometer(object):
 
     :return: A string describing the enable status of each axis.
     :rtype: str
-    :retval: "x-axis enabled, y-axis enabled, z-axis enabled."
-    :retval: "x-axis disabled, y-axis disabled, z-axis disabled."
+    :options: 
+        * "x-axis enabled, y-axis enabled, z-axis enabled."
+        * "x-axis disabled, y-axis disabled, z-axis disabled."
     """
     axis_en = bmm350_sensor.axis_en
     en_x = self.BMM350_GET_BITS(axis_en, BMM350_EN_X_MSK, BMM350_EN_X_POS)
