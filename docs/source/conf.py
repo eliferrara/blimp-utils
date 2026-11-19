@@ -21,7 +21,7 @@ release = '1.0.0'
 # :email: eli.ferrara256@gmail.com
 # :version: V1.0.0
 # :date: 2025-05-28
-# :url: https://github.com/Ballistyxx/blimp-utils
+# :url: https://github.com/eliferrara/blimp-utils
 
 
 # -- General configuration ---------------------------------------------------
