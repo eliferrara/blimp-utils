@@ -11,7 +11,7 @@ setuptools.setup(
     description="A Python library for the Falcon Flight custom embedded flight controller board.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Ballistyxx/blimp-utils",
+    url="https://github.com/eliferrara/blimp-utils",
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
     classifiers=[
