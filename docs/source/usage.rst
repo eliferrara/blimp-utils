@@ -23,7 +23,7 @@ Next, to install the library, run the one-line install command in a terminal:
 
 .. code-block:: console
 
-   (.venv) $ sudo curl -sSL https://raw.githubusercontent.com/Ballistyxx/blimp-utils/refs/heads/main/install.sh | sh
+   (.venv) $ sudo curl -sSL https://raw.githubusercontent.com/eliferrara/blimp-utils/refs/heads/main/install.sh | sh
 
 Or, install the library manually on your Raspberry Pi using pip:
 
@@ -31,7 +31,7 @@ Or, install the library manually on your Raspberry Pi using pip:
 
    sudo apt update
    sudo apt install python3-pip python3-setuptools
-   git clone https://github.com/Ballistyxx/blimp-utils.git
+   git clone https://github.com/eliferrara/blimp-utils.git
    cd blimp-utils
    sudo pip3 install .
    cd .. && rm -rf blimp-utils
