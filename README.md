@@ -14,7 +14,7 @@
 To install the library, run the one-line install command in a terminal:
 
 ```bash
-sudo curl -sSL https://raw.githubusercontent.com/Ballistyxx/blimp-utils/refs/heads/main/install.sh | sh
+sudo curl -sSL https://raw.githubusercontent.com/eliferrara/blimp-utils/refs/heads/main/install.sh | sh
 ```
 
 Or, install manually:
@@ -22,7 +22,7 @@ Or, install manually:
 ```bash
 sudo apt update
 sudo apt install python3-pip python3-setuptools
-git clone https://github.com/Ballistyxx/blimp-utils.git
+git clone https://github.com/eliferrara/blimp-utils.git
 cd blimp-utils
 sudo pip3 install .
 cd .. && rm -rf blimp-utils
@@ -79,14 +79,14 @@ The full documentation is built with Sphinx and can be found in the `docs/build/
 
 ```bash
 pip install -U sphinx
-git clone https://github.com/Ballistyxx/blimp-utils.git
+git clone https://github.com/eliferrara/blimp-utils.git
 cd blimp-utils/docs
 make clean
 make html
 # Open docs/build/html/index.html in your browser
 ```
 
-Documentation can also be found at https://ballistyxx.github.io/blimp-utils/
+Documentation can also be found at https://eliferrara.github.io/blimp-utils/
 
 ## Modules
 
